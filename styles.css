@@ -5,6 +5,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -14,8 +16,8 @@ body {
 #left {
   background-image: url(./img/plants.jpg);
   background-size: cover;
-  height: 100vh;
-  width: 30vw;
+  height: 950px;
+  width: 600px;
   position: relative;
 }
 
@@ -35,9 +37,11 @@ img {
 }
 
 .logo-name {
-  font-size: 48px;
+  font-size: 6vw;
   font-family: 'Norse-Bold';
   color: white;
+  vertical-align: middle;
+  line-height: 8rem;
 }
 
 #photo-credit {
@@ -46,4 +50,102 @@ img {
   width: 100%;
   text-align: center;
   color: whitesmoke;
+  padding: 10px
+}
+
+#right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+}
+
+#messages {
+  background-color: rgb(230, 230, 230);
+  height: 400px;
+  padding-top: 150px;
+  padding-bottom: min(10vh, 20px);
+}
+
+#messages p {
+  font-size: 2vw;
+  font-weight: 600;
+  width: 65%;
+  padding: 10px 40px;
+}
+
+#lets {
+  padding: 20px 40px;
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+#form-input-fields {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  padding-left: 40px;
+}
+
+form {
+  height: 400px;
+}
+
+.form-input {
+  height: 40px;
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.form-input label {
+  font-size: 18px;
+  color: rgb(75, 75, 75);
+  font-weight: 600;
+}
+
+.form-input input {
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+  padding: 2px 5px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.form-input input:focus {
+  border: 2px solid rgb(29, 100, 133);
+  box-shadow: 1px 5px 5px black;
+}
+
+.form-input input:invalid {
+  border-color: red;
+}
+
+#button {
+  background-color: rgb(230, 230, 230);
+  padding: 30px 0;
+  height: 125px;
+}
+
+button {
+  background-color: #596D48;
+  margin-left: 40px;
+  height: 40px;
+  width: 200px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#bottom {
+  background-color: rgb(230, 230, 230);
+  height: 150px;
+  padding: 20px 40px;
+  font-weight: 600;
+}
+
+a {
+  color: rgb(0, 54, 0);
+  text-decoration: none;
 }
